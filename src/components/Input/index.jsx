@@ -1,14 +1,29 @@
 import style from 'styled-components'
+import Download from '../Download';
+import Texto from '../Texto';
 
 const Input = style.div`
 
-    width: 40vw;
-    height: 5vh;
+    width: 60vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     
     input{
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 60%;
         border-radius: 10px;
+        font-size: 1.5rem;
+    }
+
+    section{
+        height: 33%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 `
@@ -16,7 +31,9 @@ const Input = style.div`
 export default () => {
     return (
         <Input>
-            <input type="text" />
+            <section><Texto>INSIRA O LINK E BAIXE SEU VÍDEO</Texto></section>
+            <section><input type="text" /></section>
+            <section><Download /></section>
         </Input>
     )
 }

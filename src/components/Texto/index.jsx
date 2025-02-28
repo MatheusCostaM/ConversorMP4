@@ -9,7 +9,7 @@ font-size: 3rem;
 export default ({ children }) => {
     return (
         <Texto>
-            {children}
+            <strong>{children}</strong>
         </Texto>
     )
 }
